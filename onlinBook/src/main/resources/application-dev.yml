@@ -1,0 +1,13 @@
+server:
+  port: 9821
+  
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: donald
+    password: donald
+   
+springdoc:
+    swagger-ui:
+      path: /api-docs
+      

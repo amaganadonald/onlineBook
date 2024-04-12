@@ -13,10 +13,10 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.luxprojects.onlineBook.Controllers.AddressRestController;
-import com.luxprojects.onlineBook.Dtos.AddressRequestDTO;
-import com.luxprojects.onlineBook.Dtos.AddressResponseDTO;
-import com.luxprojects.onlineBook.Interfaces.IAddress;
+import com.luxprojects.onlineBook.controller.AddressRestController;
+import com.luxprojects.onlineBook.dto.AddressRequestDTO;
+import com.luxprojects.onlineBook.dto.AddressResponseDTO;
+import com.luxprojects.onlineBook.service.AddressService;
 
 @WebMvcTest(AddressRestController.class)
 @AutoConfigureWebMvc
@@ -26,7 +26,7 @@ class AddressRestControllerTest {
 	private MockMvc mockMvc;
 	
 	@MockBean
-	private IAddress iAddress;
+	private AddressService iAddress;
 	
 	AddressRequestDTO addressRequestDTO;
 	AddressResponseDTO addressResponseDTO;

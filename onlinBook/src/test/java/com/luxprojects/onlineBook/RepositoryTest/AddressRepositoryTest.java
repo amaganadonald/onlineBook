@@ -15,8 +15,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.luxprojects.onlineBook.Entities.Address;
-import com.luxprojects.onlineBook.Repository.AddressRepository;
+import com.luxprojects.onlineBook.model.Address;
+import com.luxprojects.onlineBook.repository.AddressRepository;
 
 @ExtendWith(MockitoExtension.class)
 class AddressRepositoryTest {

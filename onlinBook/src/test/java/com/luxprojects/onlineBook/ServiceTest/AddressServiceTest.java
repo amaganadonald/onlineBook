@@ -11,12 +11,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.luxprojects.onlineBook.Dtos.AddressRequestDTO;
-import com.luxprojects.onlineBook.Dtos.AddressResponseDTO;
-import com.luxprojects.onlineBook.Entities.Address;
-import com.luxprojects.onlineBook.Mappers.AddressMapper;
-import com.luxprojects.onlineBook.Repository.AddressRepository;
-import com.luxprojects.onlineBook.Services.AddressService;
+import com.luxprojects.onlineBook.dto.AddressRequestDTO;
+import com.luxprojects.onlineBook.dto.AddressResponseDTO;
+import com.luxprojects.onlineBook.mapper.AddressMapper;
+import com.luxprojects.onlineBook.model.Address;
+import com.luxprojects.onlineBook.repository.AddressRepository;
+import com.luxprojects.onlineBook.service.Impl.AddressServiceImpl;
 
 @ExtendWith(MockitoExtension.class)
 class AddressServiceTest {
@@ -25,7 +25,7 @@ class AddressServiceTest {
 	AddressRepository addressRepository;
 	
 	@InjectMocks
-	AddressService addressService;
+	AddressServiceImpl addressService;
 		
 	AddressRequestDTO addressRequestDTO;
 	AddressResponseDTO addressResponseDTO;
